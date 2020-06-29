@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de"> 
+<head> 
+	<meta charset="utf-8" />
+	<title>jQuery</title>
+	<link rel="stylesheet" type="text/css" href="test1.css" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<!--Erweiterung von jquery für die Auswertung von Formularen -->
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	
+	<script type="text/javascript" src="test1.js"></script>
+</head>
+<body>
+<div id="wrapper">      
+<!--+++++++++++++++++++++++++++++++++-->
+<div id="content">
+
+
+<!--Bereiche anzeigen und verstecken-->
+<div id="login"> 
+    <img src="bilder/square1.png" alt="square" />
+    <form action="#" method="post" >
+	    <p>Username: <input type="text" /></p>
+		<p>Kennwort: <input type="text" /></p>
+		<p><input type="submit" value="go"/></p>
+	</form> 
+</div>
+
+	
+<!--+++++++++++++++++++++++++++++++++-->		
+<h2>Formular1</h2>   
+<form action="#" method="post" id="form1">
+	<div>
+		Nachname*:
+		<input type="text" name="nn" class="required" title="Bitte Name eingeben" />
+	</div>
+	<!--++++-->
+	<div>
+		Vorname*:
+		<input type="text" name="vn" class="required" title="Bitte Vorname Eingeben" />
+	</div>
+	<!--++++-->
+	<div>
+		E-Mail*:
+		<input type="text" name="mail" class="required" title="Bitte E-Mail Eingeben" />
+	</div>
+	<!--++++-->
+	<div>
+		PLZ*:
+		<input type="text" name="plz" class="required" title="Bitte PLZ Eingeben" />
+	</div> 
+	<!---++-->
+	<div> <input type="submit" value="weiter" /> </div>
+</form> 
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<h2>Formular2</h2>
+<form action="#" method="post" id="form2"> 
+	<div> 
+		Nachname*:
+		<input type="text" name="nn" />
+	</div>
+	<!--++++-->
+	<div>
+		Vorname*:
+		<input type="text" name="vn" />
+	</div>
+	<!--++++-->
+	<div>
+		E-Mail*:
+		<input type="text" name="mail" />
+	</div>
+	<!--++++-->
+	<div>
+		Wohnort*:
+		<input type="text" name="ort" />
+	</div>
+	<!--++++-->
+	<div>
+		PLZ*:
+		<input type="text" name="plz" />
+	</div>  
+	<!---++-->
+	<div> <input type="submit" value="weiter" /> </div>
+</form>    
+
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<!--JSON ist ein Datenaustauschformat (JavaScript Object Notation)
+ist in JS geschriben
+-->
+<h2>JavaScript Object Notation</h2>
+<div id="box1"></div>  
+
+<h2>JSON - Alle Daten anzeigen</h2>
+<div id="box2"></div>
+
+<h2>JSON - Komplexe Daten anzeigen</h2>
+<div id="box3"></div>
+
+<h2>JSON - Komplexe Daten - alles anzeigen</h2>
+<div id="box4"></div> 
+
+
+
+</div><!--ende content--> 
+</div><!--ende wrapper-->
+</body>
+</html>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+	var daten = {
+		person1: {
+			"tt"  : "CEO",
+			"nn"  : "De Oliveira",
+			"vn"  : "Marco",
+			"tel" : "030606080-1",
+			"add" : "Reichenbergerstr. 120",
+			"plz" : "10999 Berlin"
+		},
+		person2: {
+			"tt"  : "Project Director",
+			"nn"  : "Schafer",
+			"vn"  : "John",
+			"tel" : "030606080-2"
+			"add" : "Reichenbergerstr. 120",
+			"plz" : "10999 Berlin"			
+		},
+		person3: {
+		"tt"  : "Project Manager",
+		"nn"  : "Albrecht",
+		"vn"  : "Manuel",
+		"tel" : "030606080-5",
+		"add" : "Reichenbergerstr. 120",
+		"plz" : "10999 Berlin"		
+		}
+	};
+
+	//-------------------------------- 
+	//Daten in box1 anzeigen
+	var info = "";
+	
+	$.each(daten,function(wert1,wert2){
+		info += "<p class='werte'>";
+		info += wert2.tt;
+		info += wert2.vn+"  "+wert2.nn+"<br />";
+		info += wert2.tel;
+		info += wert2.add;
+		info += wert2.plz;
+		info += "</p>";
+		
+			
+	});//ende each
+	
+	//document.getElementById("box1").innerHTML = info;
+	$("#box1").html(info);
