@@ -24,7 +24,7 @@ echo "</li>
 if(isset($_SESSION["username"]))
 {
 		echo "<li > 
-			    <a href='index.php?go=tra' class='btn btn-1 btn-1a' autofocus  ><span>trailers</span></a>
+			    <a href='index.php?go=tra' class='btn btn-1 btn-1a' ><span>trailers</span></a>
 			</li>
 			<li > 
 			    <a href='index.php?go=games' class='btn btn-1 btn-1a' ><span>games</span></a>
