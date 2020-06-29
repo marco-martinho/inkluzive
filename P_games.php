@@ -7,7 +7,7 @@ mysqli_set_charset($con,"utf8");
 
 //----------------------------
 //Abfrage erstellen und ausführen
-$sql4 = "SELECT * FROM games ORDER BY Title";
+$sql4 = "SELECT * FROM games ORDER BY titel";
 $query4 = mysqli_query($con,$sql4) or die("kein select4");
 //--------------------------------------------------------------
 echo "<form action='index.php?go=games' method='post'>
@@ -28,7 +28,7 @@ if(isset($_POST["btnG"]))
 	
 	//abfrage erstellen und ausführen
 	$sql5 = "SELECT * FROM  games
-	                  WHERE gid='$game' ";
+	                  WHERE did='$game' ";
 	$query5 = mysqli_query($con,$sql5) or die("no select5");
 	//----------------
 	echo "<table>
